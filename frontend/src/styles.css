@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+:root { --c: #1f5fbf; --borde: #d6dbe3; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; color: #1c2430; background: #f5f7fa; }
+main { max-width: 960px; margin: 1rem auto; padding: 0 1rem; }
+a { color: var(--c); }
+.barra { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; justify-content: space-between;
+         padding: .75rem 1rem; background: #fff; border-bottom: 1px solid var(--borde); }
+.tarjeta { background: #fff; border: 1px solid var(--borde); border-radius: 8px; padding: 1rem; }
+.tabla-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: .5rem; border-bottom: 1px solid var(--borde); white-space: nowrap; }
+.campo { display: flex; flex-direction: column; gap: .25rem; margin-bottom: .75rem; }
+input { padding: .5rem; border: 1px solid var(--borde); border-radius: 6px; font: inherit; }
+input.invalido { border-color: #c0392b; }
+.error { color: #c0392b; font-size: .9rem; }
+.ok { color: #1e7e34; }
+button, .btn { padding: .5rem .9rem; border-radius: 6px; border: 1px solid var(--c); background: var(--c);
+               color: #fff; cursor: pointer; text-decoration: none; font: inherit; display: inline-block; }
+button.sec, .btn.sec { background: #fff; color: var(--c); }
+button.peligro { background: #c0392b; border-color: #c0392b; }
+button:disabled { opacity: .6; cursor: not-allowed; }
+.acciones { display: flex; gap: .5rem; flex-wrap: wrap; }
+.grid-form { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1rem; }
+@media (max-width: 600px) { .grid-form { grid-template-columns: 1fr; } }
